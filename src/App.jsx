@@ -1,12 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { getBooksAPI } from './api';
 import './App.css';
-import { BookForm } from './components/BookForm';
-import { BooksList } from './components/BooksList';
-import { Header } from './components/Header';
-
-const DASHBOARD = 'DASHBOARD';
-const BOOKFORM = 'BOOKFORM';
+import { Header, BooksList, BookForm } from './components';
+import { DASHBOARD, BOOKFORM } from './variables';
 
 function App() {
   const [books, setBooks] = useState([]);
@@ -35,7 +31,10 @@ function App() {
 
   return (
     <div>
-      <Header setNavigationActive={setNavigationActive} setEditedBook={setEditedBook} />
+      <Header
+        setNavigationActive={setNavigationActive}
+        setEditedBook={setEditedBook}
+      />
       {navigationActive === DASHBOARD && (
         <BooksList
           handleRemove={handleRemove}

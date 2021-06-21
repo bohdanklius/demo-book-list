@@ -40,7 +40,10 @@ export const BooksList = ({ books, handleEdit, handleRemove }) => (
 
 BooksList.propTypes = {
   books: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.number.isRequired,
+    id: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.number,
+    ]),
     bookTitle: PropTypes.string.isRequired,
     authorName: PropTypes.string.isRequired,
     category: PropTypes.string.isRequired,

@@ -1,14 +1,12 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
+import { BOOKFORM, DASHBOARD, BOOK } from '../../variables';
 import './Header.scss';
 
 const navigation = [
   { id: 1, title: 'Dashboard' },
   { id: 2, title: 'Add a Book' },
 ];
-
-const DASHBOARD = 'DASHBOARD';
-const BOOKFORM = 'BOOKFORM';
 
 export const Header = ({ setNavigationActive, setEditedBook }) => (
 
@@ -21,7 +19,7 @@ export const Header = ({ setNavigationActive, setEditedBook }) => (
           } else {
             setNavigationActive(BOOKFORM);
           }
-          setEditedBook({});
+          setEditedBook(BOOK);
         }}
         className="header__button"
         key={id}

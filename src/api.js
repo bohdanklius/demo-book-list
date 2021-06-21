@@ -21,8 +21,7 @@ const removeBookAPI = (id) => {
   fetch(`${API}/${id}`, {
     method: 'DELETE',
   })
-    .then((response) => response.text())
-    .then((response) => console.log(response));
+    .then((response) => response.text());
 };
 
 const editBookAPI = (id, data) => {

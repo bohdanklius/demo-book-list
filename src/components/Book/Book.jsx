@@ -38,7 +38,10 @@ export const Book = ({
 );
 
 Book.propTypes = {
-  id: PropTypes.number.isRequired,
+  id: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+  ]).isRequired,
   bookTitle: PropTypes.string.isRequired,
   authorName: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,

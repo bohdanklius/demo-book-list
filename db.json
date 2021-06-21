@@ -4,15 +4,36 @@
       "id": 1624212778277,
       "bookTitle": "sfnvlkdva",
       "authorName": "molodec",
-      "category": "",
+      "category": "Educational material",
       "ISBN": "123123123"
     },
     {
       "id": 1624213699709,
       "bookTitle": "bohdan to olik 2",
       "authorName": "bohdan",
-      "category": "",
+      "category": "Picture books",
       "ISBN": "123531"
+    },
+    {
+      "id": "68e4a1fd-09df-43c0-8791-8978d5edabe9",
+      "bookTitle": "asdfasd",
+      "authorName": "adcadsc",
+      "category": "Crime, Thriller & Mystery",
+      "ISBN": "asdcasdc"
+    },
+    {
+      "id": "4bae1c23-ba85-4609-95ee-4f8cad14f9db",
+      "bookTitle": "asdf",
+      "authorName": "asdf",
+      "category": "Teaching & higher education",
+      "ISBN": "asdf"
+    },
+    {
+      "id": "082d7cb4-8092-443a-ada9-2e71bb0d4be6",
+      "bookTitle": "123",
+      "authorName": "sdfsdf",
+      "category": "Crime, Thriller & Mystery",
+      "ISBN": "dasdaavav"
     }
   ]
 }
